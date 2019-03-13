@@ -11,6 +11,7 @@ class ContentsController extends Controller
     {
         $data = [];
         $data['version'] = '0.1.2';
+       $last_udpated 
         return view('contents/home', $data);
         
     }

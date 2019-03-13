@@ -84,6 +84,10 @@ class ClientController extends Controller
         $data['city'] = $client_data->city;
         $data['state'] = $client_data->state;
         $data['email'] = $client_data->email;
+
+        $request->session()->put('last_updated', $client_data->name . ' ' . 
+        $client_data->last_name);
+
         return view('client/form', $data);
     }
 
