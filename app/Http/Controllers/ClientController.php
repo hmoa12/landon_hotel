@@ -70,7 +70,7 @@ class ClientController extends Controller
             return view('client/create');
     }
 
-    public function show($client_id, Client $client)
+    public function show($client_id, Request $request)
     {
         $data = [];
         $data['client_id'] = $client_id;
